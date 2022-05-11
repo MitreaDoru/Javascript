@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.box {
+  background-image: url("../poze/poieni.jpg");
+  padding: 600px;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 50px 50px;
+  border: 2px;
+  border-radius: 50px;
+}
+
+header {
+  background-color: #666;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 10px;
+  color: white;
+  border: 2px;
+  border-radius: 20px;
+  
+}
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: 2px;
+  border-radius: 20px;
+  cursor: pointer;
+  opacity: 0.1;
+  
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  
+  
+}
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button1 {
+  background-image: url("../poze/putin.jpg");
+  background-size: 100px;
+  height: 60px;
+  float: left;
+  border: 2px;
+  border-radius: 20px;
+  margin: -7px 0px;
+  background-position: center;
+   
+}
+.button2 {
+  
+  background-color: #4CAF50;
+  background-position: center;
+  border: 2px;
+  border-radius: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.button3 {
+  margin-bottom: 10px;
+  background-image: url("../poze/putin.jpg");
+  background-size: 100px;
+  height: 60px;
+  margin: -5px 0px;
+  float: left;
+  border: 2px;
+  border-radius: 20px;  
+  background-position: center;
+}
+.button4 {
+  background-color: black;
+  background-position: center;
+  border: 2px;
+  border-radius: 20px;
+  margin: 10px 150px;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+  color: white;
+  border: 2px;
+  border-radius: 20px;
+}
+.form-popup {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  position: center;
+  z-index: 9;
+}
+.form-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border: 2px;
+  border-radius: 20px;
+  position: center;
+  max-width: 600px;
+}
+
+
+.form-container input[type=text], .form-container input[type=password], .form-container input[type=tel] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #e4e4e4;
+  border: 2px;
+  border-radius: 20px;
+}
+
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus, .form-container input[type=tel]:focus {
+  background-color: rgb(255, 255, 255);
+  outline: none;
+}
+
+
+.form-container .btn {
+  background-color: #d6d6d6;
+  color: rgb(92, 89, 89);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  border: 2px;
+  border-radius: 20px;
+}
+
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.column {
+  float: left;
+  width: 50%;
+  margin: 5px 0 22px 0;
+  padding: 10px;
+  height: 130px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column1 {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #e4e4e4;
+}
+.form-container input[type=checkbox] {
+  background-color: rgb(255, 255, 255);
+  outline: none;
+  border: 2px;
+  border-radius: 20px;
+}
+.form-container input[type=checkbox]:focus {
+  background-color: rgb(255, 255, 255);
+  outline: none;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #666
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.dropdown .dropbtn {
+  background-color: #666;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  padding: 14px 16px;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgb(0, 255, 21);
+}
+a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  width: 70px;
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <button onclick="document.location.href='https://www.google.com/search?q=blyat&rlz=1C1CHBF_enRO879RO879&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjOgPaSjsj2AhUFuqQKHWs2DD0Q_AUoAXoECAEQAw&biw=3438&bih=1337&dpr=1#imgrc=jWe-osDXuVBLQM'" class="button , button1"></button>
+    <div class="dropdown">
+      <button class="dropbtn">Menu
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+      </div>
+    </div>
+</header>
+
+<div class="box">
+  
+  <button class="open-button" onclick="openForm()">Play</button>
+  <div class="form-popup" id="myForm">
+    <form action="connect.php" class="form-container" method="post">
+      <h2>Formular inscriere</h2>
+
+      <div class="row">
+        <div class="column" style="background-color: rgb(255, 255, 255);">
+      <input type="text" placeholder="Nume" name="nume" required>
+      <input type="tel" name="telefon" placeholder="Telefon" required>
+      </div>
+      <div class="column" style="background-color: rgb(255, 255, 255);">
+      <input type="text" placeholder="Prenume" name="prenume" required>
+      <input type="text" placeholder="Enter Email" name="email" required>
+      </div>
+      </div>
+      <div class="column1" style="background-color: rgb(255, 255, 255);">
+      <input type="text" placeholder="Adresa completa" name="adresa" required>
+      </div>
+
+      <input type="checkbox" id="informatii" name="GDPR" value="DA" required>
+      <label for="informatii"> Sunt de acord ca datele mele sa fie procesate conform cu GDPR</label><br>
+      <input type="checkbox" id="site" name="termeni" value="DA" required>
+      <label for="site"> Am citit regulamentul....</label><br><br>
+      
+
+
+      <button type="submit" name="submit" id="myButton" class="btn">Incepe Jocul</button>
+      
+    </form>
+  </div>
+</div>
+  <script>
+  function openForm() {
+    document.getElementById("myForm").style.display="block";
+  }
+  
+  </script>
+<footer>
+  <button onclick="document.location.href=' https://www.biscuitiipoieni.ro/biscuiti/nutri/bax-36-bucati-poieni-cu-merisoare-cu-vitamine-si-minerale/'" class="button , button3"></button>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
